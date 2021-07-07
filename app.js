@@ -110,11 +110,8 @@ questions5();
 
 
 
-
-
-
-
-alert("lets play a game");
+function questions6(){
+    alert("lets play a game");
 
 let mynumber =6;
 let usernumber=prompt("guess a number between 0 and 10 ");
@@ -137,6 +134,12 @@ while (i<3 && (mynumber != usernumber) )
     console.log("you lost");
     ncounter++;}
 }
+
+}
+questions6();
+
+
+
 
 alert("lets play another game");
 
