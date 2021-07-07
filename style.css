@@ -1,0 +1,29 @@
+body {
+    background-image:url("https://i.ibb.co/PTw1vxj/New-1-sql.png");
+}
+
+#hob-list{
+    background-color: beige;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#goals-list{
+    background-color: beige;
+    border-radius: 20px;
+    text-align: center;
+}
+
+ol{border-radius: 20px;
+background-color: gray;}
+
+
+ul{border-radius: 20px;
+    background-color: gray;}
+
+    h1{border-radius: 20px;
+        background-color: beige;
+    text-align: center;
+    text-decoration: green;
+text-decoration-style: wavy;
+}
