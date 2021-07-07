@@ -69,9 +69,7 @@ else{alert("wrong input")};
 }
 questions3();
 
-
-
-let q4 =prompt("do i like food ?");
+function questions4(){let q4 =prompt("do i like food ?");
 if ((q4.toLowerCase()=="yes") || (q4.toLowerCase()=="y")){
     alert("great that's the right answer ")
     // console.log("true");
@@ -86,6 +84,8 @@ else if((q4.toLowerCase()=="no") || (q4.toLowerCase()=="n")) {
 
 }
 else{alert("wrong input")};
+}
+questions4();
 
 
 let q5 =prompt("is one of my goals to learn css ?");
