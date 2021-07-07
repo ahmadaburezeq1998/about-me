@@ -52,8 +52,7 @@ else{alert("wrong input")};}
 questions2();
 
 
-
-let q3 =prompt("did  i go to alzaytoonah uni ?");
+function questions3(){let q3 =prompt("did  i go to alzaytoonah uni ?");
 if ((q3.toLowerCase()=="yes") || (q3.toLowerCase()=="y")){
     alert("great that's the right answer ")
     // console.log("true");
@@ -67,6 +66,8 @@ else if((q3.toLowerCase()=="no") || (q3.toLowerCase()=="n")) {
     ncounter++;
 }
 else{alert("wrong input")};
+}
+questions3();
 
 
 
