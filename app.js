@@ -27,7 +27,7 @@ if ((q1.toLowerCase()=="yes") || (q1.toLowerCase()=="y")){
 else if((q1.toLowerCase()=="no") || (q1.toLowerCase()=="ny")) {
     alert("oops you got it wrong ")
     // console.log("false");
-    ncounter--;
+    ncounter++;
 
 
 }
@@ -38,7 +38,7 @@ let q2 =prompt("am i older than 50 ?");
 if ((q2.toLowerCase()=="yes") || (q2.toLowerCase()=="y")){
     alert(" oops you got it wrong ")
     // console.log("false");
-    ncounter--;
+    ncounter++;
 
 }
 
@@ -62,7 +62,7 @@ else if((q3.toLowerCase()=="no") || (q3.toLowerCase()=="n")) {
 
     alert(" oops you got it wrong ")
     // console.log("false");
-    ncounter--;
+    ncounter++;
 }
 else{alert("wrong input")};
 
@@ -79,7 +79,7 @@ else if((q4.toLowerCase()=="no") || (q4.toLowerCase()=="n")) {
 
     alert(" oops you got it wrong ")
     // console.log("false");
-    ncounter--;
+    ncounter++;
 
 }
 else{alert("wrong input")};
@@ -96,9 +96,74 @@ else if((q5.toLowerCase()=="no") || (q5.toLowerCase()=="n")) {
 
     alert(" oops you got it wrong ")
     // console.log("false");
-    ncounter--;
+    ncounter++;
 }
 else{alert("wrong input")};
 
 alert(name+"you answered "+ pcounter+ " questions right and "+ 
 ncounter+ "ansers wrong" );
+
+
+
+
+
+alert("lets play a game");
+
+let mynumber =6;
+let usernumber=prompt("guess a number between 0 and 10 ");
+let i =0 ;
+
+while (i<3 && (mynumber != usernumber) )
+{   if (usernumber==mynumber)
+    {alert("you won");
+    console.log("you won");
+        pcounter++;}
+    else if (usernumber <6)
+    {alert("your guess is low")}
+    else if (usernumber > mynumber)
+    {alert("your guess is high ")}
+    else{alert("ou should only guess between 0 and 10")}
+     usernumber=prompt("guess a number between 0 and 10 ");
+    i++;
+    if (i==3 && (usernumber!=mynumber))
+    {alert("you lost the rright answerr is "+mynumber);
+    console.log("you lost");
+    ncounter++;}
+}
+
+alert("lets play another game");
+
+let cities=["amman","jarash","ajloun","mafraq","aqaba","irbid","salt","madaba"];
+let usercity =prompt("name a city in jordan");
+
+let d=0 ;
+let b=0
+while(d<5){
+        
+for (b ;b< cities.length;b++)
+{
+    if (usercity==cities[b])
+    {
+        alert("thats a right answer");
+        b=10;
+        pcounter++;
+        break;
+    }
+    else {
+        alert("try again");
+        usercity=prompt("name a city in jordan");
+        break;
+    }
+
+}
+d++;
+}
+if (d==5 && (usercity!=cities[cities.length]) && (b !=10))
+{
+    alert("you lost");
+    alert("the right answer could've been one of "+cities);
+    ncounter++;
+
+    
+}
+alert("you have "+pcounter+" right answers and "+ ncounter+" wrong answers");
