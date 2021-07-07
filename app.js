@@ -14,7 +14,8 @@ let ncounter=0;
 alert("Welcome "+ name +"to our website");
 
 
-function questions1(){let q1=prompt("is my name ahmad?");
+function questions1(){
+    let q1=prompt("is my name ahmad?");
 
 if ((q1.toLowerCase()=="yes") || (q1.toLowerCase()=="y")){
     alert("great that's the right answer ")
@@ -34,8 +35,7 @@ else{alert("wrong input")};
 questions1();
 
 
-
-let q2 =prompt("am i older than 50 ?");
+function questions2(){let q2 =prompt("am i older than 50 ?");
 if ((q2.toLowerCase()=="yes") || (q2.toLowerCase()=="y")){
     alert(" oops you got it wrong ")
     // console.log("false");
@@ -48,7 +48,8 @@ else if((q2.toLowerCase()=="no") || (q2.toLowerCase()=="n")) {
     // console.log("true");
     pcounter++;
 }
-else{alert("wrong input")};
+else{alert("wrong input")};}
+questions2();
 
 
 
