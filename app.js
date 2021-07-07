@@ -87,8 +87,8 @@ else{alert("wrong input")};
 }
 questions4();
 
-
-let q5 =prompt("is one of my goals to learn css ?");
+function questions5(){
+    let q5 =prompt("is one of my goals to learn css ?");
 if ((q5.toLowerCase()=="yes") || (q5.toLowerCase()=="y")){
     alert("great that's the right answer ")
     // console.log("true");
@@ -105,6 +105,10 @@ else{alert("wrong input")};
 
 alert(name+"you answered "+ pcounter+ " questions right and "+ 
 ncounter+ "ansers wrong" );
+}
+questions5();
+
+
 
 
 
