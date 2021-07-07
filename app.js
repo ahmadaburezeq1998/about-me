@@ -14,9 +14,7 @@ let ncounter=0;
 alert("Welcome "+ name +"to our website");
 
 
-
-
-let q1=prompt("is my name ahmad?");
+function questions1(){let q1=prompt("is my name ahmad?");
 
 if ((q1.toLowerCase()=="yes") || (q1.toLowerCase()=="y")){
     alert("great that's the right answer ")
@@ -32,6 +30,9 @@ else if((q1.toLowerCase()=="no") || (q1.toLowerCase()=="ny")) {
 
 }
 else{alert("wrong input")};
+}
+questions1();
+
 
 
 let q2 =prompt("am i older than 50 ?");
